@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - dimitri1181/angular-io-quickstart
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - dimitri1181/php-helloworld
       require_self_approval: true
     cat: {}
@@ -24,6 +28,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      dimitri1181/angular-io-quickstart:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       dimitri1181/jx3-openshift-crc:
       - config-updater
       - approve
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - dimitri1181/jx3-openshift-crc
+      trusted_org: todo
+    - repos:
+      - dimitri1181/angular-io-quickstart
       trusted_org: todo
     - repos:
       - dimitri1181/php-helloworld

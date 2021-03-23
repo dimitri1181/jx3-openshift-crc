@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        dimitri1181/angular-io-quickstart: true
         dimitri1181/jx3-openshift-crc: true
         dimitri1181/php-helloworld: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        dimitri1181/angular-io-quickstart: merge
         dimitri1181/jx3-openshift-crc: merge
         dimitri1181/php-helloworld: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - dimitri1181/jx3-openshift-crc
+        - dimitri1181/angular-io-quickstart
         - dimitri1181/php-helloworld
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - dimitri1181/jx3-openshift-crc
+        - dimitri1181/angular-io-quickstart
         - dimitri1181/php-helloworld
       target_url: http://dashboard-jx.apps-crc.testing
 kind: ConfigMap
