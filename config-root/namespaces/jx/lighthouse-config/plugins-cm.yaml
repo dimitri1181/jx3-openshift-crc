@@ -6,6 +6,10 @@ data:
       repos:
       - dimitri1181/jx3-openshift-crc
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - dimitri1181/php-helloworld
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -37,6 +41,22 @@ data:
       - cat
       - dog
       - pony
+      dimitri1181/php-helloworld:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -49,6 +69,11 @@ data:
     - repos:
       - dimitri1181/jx3-openshift-crc
       trusted_org: todo
+    - repos:
+      - dimitri1181/php-helloworld
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
