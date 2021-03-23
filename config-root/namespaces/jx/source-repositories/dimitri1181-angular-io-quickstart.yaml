@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: dimitri1181
+    provider: github
+    repository: angular-io-quickstart
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: dimitri1181-angular-io-quickstart
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/dimitri1181/angular-io-quickstart.git
+  org: dimitri1181
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: angular-io-quickstart
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/dimitri1181/angular-io-quickstart
